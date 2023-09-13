@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 	s.frameworks            = "UIKit"
 	s.vendored_frameworks   = "TOCLiveness.xcframework"
 	s.dependency 'lottie-ios'
-	s.dependency 'Socket.IO-Client-Swift'
+	s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
 end
