@@ -1,0 +1,181 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TOCLiveness
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Foundation
+import Lottie
+import SocketIO
+import Swift
+import SystemConfiguration
+@_exported import TOCLiveness
+import UIKit
+import _Concurrency
+import _StringProcessing
+public enum InternetConnectionManager {
+  public static func isConnectedToNetwork() -> Swift.Bool
+}
+public enum Localization {
+  public static let err_network: Swift.String
+  public static let timeout_title: Swift.String
+  public static let timeout_body: Swift.String
+  public static let timeout_ok: Swift.String
+  public static let session_body: Swift.String
+  public static let session_title: Swift.String
+  public static let ins_image_blury: Swift.String
+  public static let ins_place_inside_frame: Swift.String
+  public static let ins_face_not_found: Swift.String
+  public static let ins_close_camera: Swift.String
+  public static let ins_follow_mask: Swift.String
+  public static let ins_mouth_open: Swift.String
+  public static let ins_mouth_close: Swift.String
+  public static let top_text_1: Swift.String
+  public static let top_text_2: Swift.String
+}
+public struct HTTPMethod : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
+  public static let connect: TOCLiveness.HTTPMethod
+  public static let delete: TOCLiveness.HTTPMethod
+  public static let get: TOCLiveness.HTTPMethod
+  public static let head: TOCLiveness.HTTPMethod
+  public static let options: TOCLiveness.HTTPMethod
+  public static let patch: TOCLiveness.HTTPMethod
+  public static let post: TOCLiveness.HTTPMethod
+  public static let put: TOCLiveness.HTTPMethod
+  public static let query: TOCLiveness.HTTPMethod
+  public static let trace: TOCLiveness.HTTPMethod
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+@available(*, deprecated, message: "Soon to be deprecated, use init(onFinished: @escaping ((status:, livenessToken:)) -> Void) instead")
+public protocol LivenessDelegate : AnyObject {
+  func finished(status: Swift.Int, livenessToken: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers final public class Liveness : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  convenience public init(onFinished: @escaping ((status: Swift.Int, livenessToken: Swift.String)) -> Swift.Void)
+  @objc deinit
+}
+extension TOCLiveness.Liveness {
+  final public func getSelfieImage() -> UIKit.UIImage
+  final public func getSessionId() -> Swift.String
+}
+extension TOCLiveness.Liveness {
+  @available(*, deprecated, message: "Use init(onFinished: @escaping ((status:, livenessToken:)) -> Void) instead")
+  final public func set(delegate: any TOCLiveness.LivenessDelegate)
+  final public func set(retryOnTimeout: Swift.Bool)
+  @available(*, deprecated, message: "Use initLiveness(from viewController:, using sessionId:) instead")
+  final public func set(sessionId: Swift.String)
+}
+extension TOCLiveness.Liveness {
+  @available(*, deprecated, message: "Use initLiveness(from viewController:, using sessionId:) instead")
+  final public func initLiveness(from viewController: UIKit.UIViewController)
+  final public func initLiveness(from viewController: UIKit.UIViewController, using sessionId: Swift.String)
+}
+public struct HTTPHeaders {
+  public init()
+  public init(_ headers: [TOCLiveness.HTTPHeader])
+  public init(_ dictionary: [Swift.String : Swift.String])
+  public mutating func add(name: Swift.String, value: Swift.String)
+  public mutating func add(_ header: TOCLiveness.HTTPHeader)
+  public mutating func update(name: Swift.String, value: Swift.String)
+  public mutating func update(_ header: TOCLiveness.HTTPHeader)
+  public mutating func remove(name: Swift.String)
+  public mutating func sort()
+  public func sorted() -> TOCLiveness.HTTPHeaders
+  public func value(for name: Swift.String) -> Swift.String?
+  public subscript(name: Swift.String) -> Swift.String? {
+    get
+    set
+  }
+  public var dictionary: [Swift.String : Swift.String] {
+    get
+  }
+}
+extension TOCLiveness.HTTPHeaders : Swift.ExpressibleByDictionaryLiteral {
+  public init(dictionaryLiteral elements: (Swift.String, Swift.String)...)
+  public typealias Key = Swift.String
+  public typealias Value = Swift.String
+}
+extension TOCLiveness.HTTPHeaders : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: TOCLiveness.HTTPHeader...)
+  public typealias ArrayLiteralElement = TOCLiveness.HTTPHeader
+}
+extension TOCLiveness.HTTPHeaders : Swift.Sequence {
+  public func makeIterator() -> Swift.IndexingIterator<[TOCLiveness.HTTPHeader]>
+}
+extension TOCLiveness.HTTPHeaders : Swift.Collection {
+  public var startIndex: Swift.Int {
+    get
+  }
+  public var endIndex: Swift.Int {
+    get
+  }
+  public subscript(position: Swift.Int) -> TOCLiveness.HTTPHeader {
+    get
+  }
+  public func index(after i: Swift.Int) -> Swift.Int
+  public typealias Element = TOCLiveness.HTTPHeader
+  public typealias Index = Swift.Int
+  public typealias Indices = Swift.DefaultIndices<TOCLiveness.HTTPHeaders>
+  public typealias Iterator = Swift.IndexingIterator<[TOCLiveness.HTTPHeader]>
+  public typealias SubSequence = Swift.Slice<TOCLiveness.HTTPHeaders>
+}
+extension TOCLiveness.HTTPHeaders : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct HTTPHeader : Swift.Hashable {
+  public let name: Swift.String
+  public let value: Swift.String
+  public init(name: Swift.String, value: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TOCLiveness.HTTPHeader, b: TOCLiveness.HTTPHeader) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension TOCLiveness.HTTPHeader : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension TOCLiveness.HTTPHeader {
+  public static func accept(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func acceptCharset(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func acceptLanguage(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func acceptEncoding(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func authorization(username: Swift.String, password: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func authorization(bearerToken: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func authorization(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func contentDisposition(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func contentEncoding(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func contentType(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+  public static func userAgent(_ value: Swift.String) -> TOCLiveness.HTTPHeader
+}
+extension TOCLiveness.HTTPHeaders {
+  public static let `default`: TOCLiveness.HTTPHeaders
+}
+extension TOCLiveness.HTTPHeader {
+  public static let defaultAcceptEncoding: TOCLiveness.HTTPHeader
+  public static let defaultAcceptLanguage: TOCLiveness.HTTPHeader
+  public static let defaultUserAgent: TOCLiveness.HTTPHeader
+}
+extension Foundation.URLRequest {
+  public var headers: TOCLiveness.HTTPHeaders {
+    get
+    set
+  }
+}
+extension Foundation.HTTPURLResponse {
+  public var headers: TOCLiveness.HTTPHeaders {
+    get
+  }
+}
+extension Foundation.URLSessionConfiguration {
+  public var headers: TOCLiveness.HTTPHeaders {
+    get
+    set
+  }
+}
