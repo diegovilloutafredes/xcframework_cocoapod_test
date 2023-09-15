@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
 	s.source                = { :git => "https://github.com/diegovilloutafredes/xcframework_cocoapod_test.git", :tag => "#{s.version}" }
 	s.frameworks            = "UIKit"
 	s.vendored_frameworks   = "TOCLiveness.xcframework"
-	s.dependency 'lottie-ios', '~> 3.2.3'
 end
