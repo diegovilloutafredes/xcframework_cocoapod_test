@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 	s.swift_version         = "5"
 	s.requires_arc          = true
 	s.name                  = "xcframework_cocoapod_test"
-	s.version               = "1.0.18"
+	s.version               = "1.0.19"
 	s.homepage              = "https://github.com/diegovilloutafredes/xcframework_cocoapod_test"
 	s.author                = { "Diego Villouta" => "diegov17@gmail.com" }
 	s.summary               = "Test library Test library Test library Test library Test library Test library Test library Test library Test library"
