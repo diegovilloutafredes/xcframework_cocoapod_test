@@ -4198,6 +4198,34 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TOCLiveness"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TOCLiveness"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TOCLiveness"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "TOCLiveness"
+      },
+      {
         "kind": "TypeDecl",
         "name": "JSONDecoder",
         "printedName": "JSONDecoder",
@@ -4206,6 +4234,16 @@
         "mangledName": "$s10Foundation11JSONDecoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -4777,6 +4815,41 @@
             "printedName": "SocketData",
             "usr": "s:8SocketIO0A4DataP",
             "mangledName": "$s8SocketIO0A4DataP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -4789,8 +4862,25 @@
         "mangledName": "$s10Foundation11JSONEncoderC",
         "moduleName": "Foundation",
         "isOpen": true,
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "TopLevelEncoder",
@@ -4812,13 +4902,6 @@
             ],
             "usr": "s:7Combine15TopLevelEncoderP",
             "mangledName": "$s7Combine15TopLevelEncoderP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4908,6 +4991,16 @@
                 "mangledName": "$s10Foundation10URLRequestV11TOCLivenessE7headersAD11HTTPHeadersVvM",
                 "moduleName": "TOCLiveness",
                 "implicit": true,
+                "intro_Macosx": "10.10",
+                "intro_iOS": "8.0",
+                "intro_tvOS": "9.0",
+                "intro_watchOS": "2.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -4918,6 +5011,16 @@
         "usr": "s:10Foundation10URLRequestV",
         "mangledName": "$s10Foundation10URLRequestV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -5223,6 +5326,10 @@
                 "mangledName": "$sSo25NSURLSessionConfigurationC11TOCLivenessE7headersAC11HTTPHeadersVvM",
                 "moduleName": "TOCLiveness",
                 "implicit": true,
+                "intro_iOS": "7.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "isFromExtension": true,
                 "accessorKind": "_modify"
               }
@@ -5384,6 +5491,16 @@
         "usr": "s:10Foundation3URLV",
         "mangledName": "$s10Foundation3URLV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -5492,6 +5609,41 @@
             "printedName": "_ExpressibleByFileReferenceLiteral",
             "usr": "s:s34_ExpressibleByFileReferenceLiteralP",
             "mangledName": "$ss34_ExpressibleByFileReferenceLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -5503,6 +5655,16 @@
         "usr": "s:10Foundation13URLComponentsV",
         "mangledName": "$s10Foundation13URLComponentsV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -9551,6 +9713,118 @@
       "offset": 663,
       "length": 1,
       "value": "\"-liveness.tocws.com\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 727,
+      "length": 9,
+      "value": "\"buttonX\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 871,
+      "length": 15,
+      "value": "\"button_blanco\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1017,
+      "length": 13,
+      "value": "\"button_gris\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1163,
+      "length": 14,
+      "value": "\"button_negro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1310,
+      "length": 14,
+      "value": "\"button_trans\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1458,
+      "length": 14,
+      "value": "\"cuadroBlanco\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1602,
+      "length": 12,
+      "value": "\"cuadroRojo\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 13,
+      "value": "\"cuadroVerde\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1880,
+      "length": 8,
+      "value": "\"ind_01\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2009,
+      "length": 8,
+      "value": "\"ind_02\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 8,
+      "value": "\"ind_03\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2267,
+      "length": 8,
+      "value": "\"ind_04\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2399,
+      "length": 9,
+      "value": "\"logoTOC\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2542,
+      "length": 14,
+      "value": "\"questionMark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2687,
+      "length": 13,
+      "value": "\"test_button\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/TOCLiveness-fvmyezyzjwomwscpghybuhoqoqfq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TOCLiveness\/IntermediateBuildFilesPath\/TOCLiveness.build\/Release (Sandbox)-iphoneos\/TOCLiveness.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2838,
+      "length": 17,
+      "value": "\"test_button_off\""
     }
   ]
 }

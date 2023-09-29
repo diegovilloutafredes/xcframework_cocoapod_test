@@ -1,7 +1,7 @@
 framework module TOCLiveness {
   umbrella header "TOCLiveness.h"
-
   export *
+
   module * { export * }
 }
 
